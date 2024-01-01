@@ -68,8 +68,12 @@ header {
 		font-family: var(--text-special);
 	}
 
-	& :hover, & :focus {
+	& :hover {
 		transform: translateY(-0.25rem);
+		color: var(--secondary);
+	}
+
+	& :focus {
 		color: var(--secondary);
 	}
 }
