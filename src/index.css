@@ -7,7 +7,7 @@
 	--neutral-light: #EEE2DC;
 
 	--background: 24rem;
-	--h1: 9rem;
+	--h1: 7.5rem;
 	--h2: 2.5rem;
 	--h3: 1.5rem;
 	--p: 1rem;
@@ -178,7 +178,7 @@ a {
 
 .hero-img {
 	position: absolute;
-	right: 2.5%;
+	right: 5%;
 	bottom: -10%;
 	width: 25vw;
 
@@ -294,7 +294,7 @@ a {
 
 	& .background {
 		position: absolute;
-		top: -20rem;
+		top: -35%;
 		left: 100%;
 		font-size: 20rem;
 		color: var(--primary);
@@ -335,7 +335,7 @@ a {
 	& .contact-img {
 		position: absolute;
 		right: 20vw;
-		top: -40%;
+		top: -30%;
 		overflow: hidden;
 		width: 25%;
 		aspect-ratio: 5 / 7;
