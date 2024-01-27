@@ -9,26 +9,22 @@ import Contact from './Contact';
 import Transition from './Transition';
 
 // visuals
-import { changeClassNames, animate, transition } from './Animations';
+import { animate, transition } from './Animations';
 import { useEffect, useState } from 'react';
 
 function App() {
-  const ids = ['hero', 'about', 'about-members-header', 'member-1', 'member-2', 'contact-1', 'contact-2', 'contact-3', 'lesson-1', 'lesson-2', 'lesson-3']
   const location = useLocation();
   let [state, setState] = useState('initial');
 
   // on page change
   useEffect(() => {
     if(state === 'initial') {
-
       transition();
-      setTimeout(() => {
-        setState('normal');
-        animationSetUp(ids);
-      }, 1700)
+      animate();
+      setState('normal');
     }
     else {
-      animationSetUp(ids);
+      animate();
     }
   }, [location])
 
@@ -51,8 +47,3 @@ function App() {
 }
 
 export default withRouter(App);
-
-function animationSetUp(ids, app) {
-  changeClassNames(ids);
-  animate(ids);
-}

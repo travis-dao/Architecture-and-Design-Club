@@ -30,22 +30,22 @@ const About = () => {
                 <div>
                     <div id="about-members-header" className="about-members-header">
                         <h3 className="gsap-reveal">Meet the Founders</h3>
-                        <p className="gsap-reveal">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda sint iusto ad optio commodi nobis eius tenetur odit facilis, nulla sunt totam delectus rem autem non fugiat debitis hic dolores.</p>
+                        <p className="gsap-reveal">Two high school students founded the Architecture and Design Club to explore their shared passion for creativity and innovation. The club serves as a platform for members to collaborate, share ideas, and develop their talents in these fields.</p>
                     </div>
                     <div id="member-1" className="member">
                         <div className="member-img">
-                            <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8fDA%3D" />
+                            <img src="people/jonathan.jpg" />
                         </div>
                         <h2 className="gsap-reveal">Jonathan Andrade</h2>
-                        <p className="gsap-reveal">Co-Founder & Lesson Planner</p>
+                        <p className="gsap-reveal">Co-Founder</p>
                     </div>
                 </div>
                 <div id="member-2" className="member">
                     <div className="member-img">
-                        <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8fDA%3D" />
+                        <img src="people/brian.jpg" />
                     </div>
                     <h2 className="gsap-reveal">Brian Kwak</h2>
-                    <p className="gsap-reveal">Co-Founder & Digital Artist</p>
+                    <p className="gsap-reveal">Co-Founder</p>
                 </div>
             </section>
         </div>

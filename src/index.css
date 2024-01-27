@@ -162,7 +162,7 @@ a {
 		transition: all 0.5s;
 	}
 
-	&>a {
+	& > a {
 		width: fit-content;
 		transition: all 0.5s;
 
@@ -268,8 +268,9 @@ a {
 
 	&>img {
 		transition: all 0.5s ease-in-out;
-		aspect-ratio: 5 / 7;
+		height: 70vh;
 		width: 100%;
+		object-fit: cover;
 	}
 }
 

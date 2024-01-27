@@ -6,7 +6,12 @@ import { ScrollTrigger } from 'gsap/all';
 gsap.registerPlugin(ScrollTrigger);
 
 // text animations
-export function changeClassNames(ids) {
+export function animate() {
+    changeClassNames(ids);
+    animateAll(ids);
+}
+
+function changeClassNames(ids) {
     const text = new SplitType('.gsap-reveal');
      
     ids.forEach( id => {
@@ -20,7 +25,7 @@ export function changeClassNames(ids) {
     })
   }
   
-export function animate(ids) {
+function animateAll(ids) {
     ids.forEach( id => {
         const element = document.getElementById(id);
         if (element) {
@@ -78,6 +83,8 @@ function animateImg() {
 }
 
 // transitions
+const ids = ['hero', 'about', 'about-members-header', 'member-1', 'member-2', 'contact-1', 'contact-2', 'contact-3', 'lesson-1', 'lesson-2', 'lesson-3']
+
 export function transition() {
     const main = document.getElementById('main');
     main.classList.add('no-scroll');
@@ -93,14 +100,24 @@ export function transition() {
     tl.from('.char-transition', {
         duration: 0.5,
         y: '100%',
-        stagger: 0.05
+        stagger: 0.03
+    })
+    tl.to('.char-transition', {
+        delay: 1,
+        duration: 0.5,
+        y: '-100%',
+        stagger: 0.03
     })
     tl.fromTo('#transition', {
         y: '0'
     }, {
         y: '-100%',
-        delay: 0.5,
+        delay: 0.125,
         duration: 1,
+        onStart: () => {
+            changeClassNames(ids);
+            animateAll(ids);
+        },
         onComplete: () => {
             text.revert();
             main.classList.remove('no-scroll');
