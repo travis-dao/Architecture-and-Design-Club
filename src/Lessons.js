@@ -2,8 +2,8 @@ import { useState } from 'react';
 
 const Lessons = () => {
     const [lessons, setLessons] = useState([
-        { title: 'Introduction', date:'Week 1', body: 'Understanding the fundamental rules and princibles of architecture with examples.', img: 'lesson_img/lesson1.jpg', link:'https://docs.google.com/presentation/d/1Df2G7ub3wRqvOyYs_eFn42utj9oSRlAzleUMq5R6W_k/edit#slide=id.g4dfce81f19_0_45' ,id: 1},
-        { title: 'Brutalism', date:'Week 3', body: 'Disconvering Brutalism. Understanding how Brutalism came into the world.', img: 'lesson_img/lesson2.jpg', link:'https://docs.google.com/presentation/d/1Vco073E8Q5U3_YGCxoG4xf_gyujuu9_ZiLGqi-MDpsg/edit' , id: 2}
+        { title: 'Introduction', date:'Week 1', body: 'Understanding the fundamental rules and princibles of architecture with examples.', img: 'lessons/lesson1.jpg', link:'https://docs.google.com/presentation/d/1Df2G7ub3wRqvOyYs_eFn42utj9oSRlAzleUMq5R6W_k/edit#slide=id.g4dfce81f19_0_45' ,id: 1},
+        { title: 'Brutalism', date:'Week 3', body: 'Disconvering Brutalism. Understanding how Brutalism came into the world.', img: 'lessons/lesson2.jpg', link:'https://docs.google.com/presentation/d/1Vco073E8Q5U3_YGCxoG4xf_gyujuu9_ZiLGqi-MDpsg/edit' , id: 2}
     ])
 
     return (  
