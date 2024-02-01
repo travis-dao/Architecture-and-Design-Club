@@ -31,12 +31,14 @@
 
 /* Header */
 header {
+	/* position: sticky;
+	top: 0; */
 	position: absolute;
 	width: 100vw;
 }
 
 .navbar {
-	position: relative;
+	position: sticky;
 	display: flex;
 	justify-content: space-between;
 
@@ -427,4 +429,13 @@ main {
 .no-scroll {
 	overflow: hidden;
 	max-height: 100dvh;
+}
+
+.watermark {
+	position: fixed;
+	bottom: 2em;
+	right: 2em;
+	color: var(--accent);
+	z-index: 5;
+	font-size: var(--p-small);
 }

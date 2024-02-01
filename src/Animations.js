@@ -103,7 +103,7 @@ export function transition() {
         stagger: 0.03
     })
     tl.to('.char-transition', {
-        delay: 1,
+        delay: 0.5,
         duration: 0.5,
         y: '-100%',
         stagger: 0.03

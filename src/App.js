@@ -7,6 +7,7 @@ import About from './About';
 import Lessons from './Lessons';
 import Contact from './Contact';
 import Transition from './Transition';
+import Watermark from './Watermark';
 
 // visuals
 import { animate, transition } from './Animations';
@@ -31,6 +32,7 @@ function App() {
   return (
     <div className='app'>
       <Transition />
+      <Watermark />
       <header>
         <Navbar />
       </header>
